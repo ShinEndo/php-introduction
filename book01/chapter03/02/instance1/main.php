@@ -14,5 +14,15 @@
         echo $task1->name, 'は未完了です。', PHP_EOL;
     }
 
+    // TODOタスク「食材の買い出し」を作る
+    $task2 = new Task();
+    $task2->name = '食材の買い出し';
+    $task2->progress = 50;
+    if($task2->isCompleted() === true ) {
+        echo $task2->name, 'は完了しました。', PHP_EOL;
+    } else {
+        echo $task2->name, 'は未完了です。', PHP_EOL;
+    }
+
 ?>
 </body>
